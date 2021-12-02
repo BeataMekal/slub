@@ -1,0 +1,415 @@
+html{
+	font-size: 62.5%;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+.clearfix{
+	clear: both;
+}
+#container{
+	margin: 0 auto;
+	width: 100%;
+	/*height: 500px;*/
+	font-family: arial;
+
+		}
+
+	header{
+
+		height: 100vh;
+		}
+			.hamburger{
+				display: none;
+				font-size: 30px;
+			}
+
+			.hamburger-menu{
+				text-align: left;
+			}
+			.hamburger-close{
+				padding-top: 30px;
+				text-align: left;
+				display: none;
+			}
+
+			.fa-bars{
+				color: #000000;
+				text-shadow: 1px 1px 5px #6d6d6d;
+
+			}
+			.fa-times{
+				color: #223e0d;
+			}
+
+
+
+
+		
+		/*.logo{
+			flex: 2;
+		}*/
+		/*.menu-front{
+			padding-top: 50px;
+			flex: 2;
+		}
+		.menu-back{
+			padding-top: 50px;
+			flex: 3;
+		}*/
+
+
+
+		.header-image{
+			background-image: url("../wesele/para-mloda.jpg");
+			background-repeat: no-repeat;
+			height: 100%;
+			background-size: cover;
+			/* display: flex; */
+			display:grid;
+			grid-template-rows: repeat(3,1fr);
+
+		}
+
+			.header-title{
+				padding: 0 0 0 0;
+				text-align: center;
+				font-style: normal;
+				font-weight: normal;
+				line-height: 91px;
+				color: white;
+				font-family: 'Spectral', serif;
+				grid-row-start: 2;
+				align-self: center;
+				font-size: 6.0rem;
+				text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+			}
+
+			#main-menu{
+
+			}
+	
+			 #upper-menu{
+	
+				width: 100%;
+				font-family: 'Martel Sans', sans-serif;
+				/*background-color: white;*/
+				color:#ffffff;
+				
+	
+			}
+			#upper-menu ul{
+				display: flex;
+				justify-content: right;
+				flex-wrap: wrap;
+	
+			}
+	
+			#upper-menu li{
+				list-style-type: none;
+				/* flex-basis:12.5%; */
+				padding-left: 30px;
+				padding-right: 30px;
+				padding-top: 10px;
+				font-size: 2.0rem;
+				text-align: center;
+			}
+			
+			#upper-menu ul li:hover{
+				background-color: #9b9b9b;
+				color: #1b3f00;
+			}
+
+			#upper-menu a{
+				color: #ffffff;
+				text-decoration: none;
+			}
+			#upper-menu a:hover{
+				color: #1b3f00;
+			}
+
+			/*.header-tittle h1{
+				font-size: 3.5rem;
+				line-height: 5.0rem;
+
+			}
+			.header-tittle h2{
+				font-size: 6.5rem;
+				line-height:8.0rem;
+				color: white;
+			}
+*/
+
+				
+	main{
+	}
+
+	.main_img{
+		width: 100%;
+
+	}
+	span{
+		color:#4C6600;
+	}
+	h2{
+		text-align: left;
+		font-size:6.0rem;
+		/*text-shadow:1px 1px 5px black;*/
+		font-family: 'Spectral', serif;
+		color: #000000;
+		font-style: normal;
+		font-weight: normal;
+		line-height: 91px;
+		padding-left: 70px;
+
+	}
+	p{
+		font-family: 'Martel Sans';
+		font-size: 1.8rem;
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+	h3{
+		font-family: 'Great Vibes';
+		color: #1b3f00;
+		font-weight: 400;
+	}
+	.greeting_section{
+		height: 100vh;
+		padding-left: 100px;
+		padding-top: 60px;
+		padding-right: 100px;
+	}
+	
+	.greeting_section h3{
+		font-size: 9.0rem;
+		text-align: right;
+		padding-top: 50px;
+	}
+	.greeting_section p{
+		padding-top: 40px;
+	}
+	.greeting_section .mapa{
+		text-align: center;
+		padding-top: 30px;
+	}
+
+
+
+	.form_section{
+		height: 80vh;
+		padding-top: 200px;
+		
+		
+	}
+	.form-text{
+		display: flex;
+	}
+
+	.p-space{		
+		padding-top: 30px;
+	}
+	.form_section .btns{
+		padding-top: 30px;
+	}
+
+	.form_section button{
+
+		background-color: #1b3f00; /* Green */
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 1.6rem;
+		transition-duration: 0.4s;
+		margin: 15px;
+
+	}
+
+	.form_section button:hover{
+		background-color: #306b02; /* Green */
+		color: white;
+		cursor: pointer;
+	}
+	.form_section h3{
+		font-size: 4.5rem;
+		padding-left: 100px;
+		padding-top: 10px;
+	}
+	.form_section .contact{
+		display: flex;
+	}
+	.form_section a{
+		text-decoration: none;
+		font-size: 2.5rem;
+		color: #000000;
+		padding-left: 100px;
+		padding-top: 50px;
+		
+	}
+
+	.form_section a:hover{
+		color: #353535;
+	}
+	.form_section .contact{
+		padding-top: 10px;
+	}
+	.form_section .contact .phone{
+		padding-top: 20px;
+	}
+	.form_section .form-image{
+		align-self: flex-end;
+		flex-grow: 2;
+		text-align: right;
+		padding-right: 100px;
+	}
+
+
+	.photos_section{
+		height: 80vh;
+		width:100%;
+		padding-top: 60px;
+	}
+	.photos_section img{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+
+	footer{
+		width: 100%;
+		height: 10vh;
+		color:#000000;
+		font-family: 'Martel Sans', sans-serif;
+
+	}
+	.footer_menu ul{
+		display: flex;
+		justify-content: left;
+		flex-wrap: wrap;
+		list-style-type: none;
+	}
+	.footer_menu li{
+		list-style-type: none;
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-top: 10px;
+		font-size: 1.5rem;
+		text-align: center;
+}
+	.footer_menu a{
+		color: #292929;
+		text-decoration: none;
+	}
+	footer .footer_copy p{
+		padding-top: 20px;
+		color:#000000;
+		font-size: 1.5rem;
+		text-align: center;
+	}
+
+	@media all and (max-width:1300px){
+	
+
+	}
+
+
+
+	@media all and (max-width:800px){
+		html{
+			font-size: 40.5%;
+		}
+
+		#upper-menu ul{
+			flex-direction: column;
+			padding-bottom: 5px;
+		}
+		#upper-menu li a{
+			font-size: 1.5rem;
+		}
+		#upper-menu li {
+			padding: 5px 5px 0 5px;
+		}
+		#upper-menu{
+			display:none;
+		}
+		.hamburger{
+			display: flex;
+		}
+		
+		.hamburger-menu{
+			margin: 10px 10px 10px 10px;
+			text-decoration: none;
+		}
+	
+		.hamburger-menu.close{
+			display: none;
+		}
+		.header-image{
+			
+			grid-template-rows: repeat(7,1fr);
+
+		}
+		
+		.header-title{
+			grid-row-start: 3;
+			align-self: start;
+			padding: 0 10 0 10;
+
+		}
+		.newsletter_section .newsletter_form input{
+			padding: 10 10 5 10;
+			margin: 0px;
+		}
+		.greeting_section{
+			padding-left: 20px;
+			padding-top: 60px;
+			padding-right: 20px;
+		}
+		.mapa{
+			padding: 20px;
+		}
+		.greeting_section img{
+			padding-top: 30px;
+			width: 400px;
+		}
+		.greeting_section h3{
+			font-size: 38px;
+		}
+		.form_section{
+			
+			padding-top: 30px;
+		}
+		.form-text{
+			flex-direction: column;
+		}
+		.form_section button{
+			padding: 10px 22px;
+		}
+		.form_section img{
+			width: 300px;
+		}
+		.photos_section{
+			padding-top: 100px;
+			height: 50vh;
+		}
+		.photos_section img{
+			width: 200px;
+		}
+		@media all and (max-width:640px){
+			.header-image{
+				background-image: url("../wesele/para-mloda-mobile.jpg");
+
+			}
+
+		}
+
+
+	}
