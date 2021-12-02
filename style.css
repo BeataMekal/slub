@@ -297,7 +297,7 @@ html{
 
 
 
-	@media all and (max-width:800px){
+	@media all and (max-width:1500px){
 		html{
 			font-size: 40.5%;
 		}
@@ -378,7 +378,7 @@ html{
 		.photos_section img{
 			width: 200px;
 		}
-		@media all and (max-width:640px){
+		@media all and (max-width:1500px){
 			.header-image{
 				background-image: url('para-mloda-mobile.jpg');
 
