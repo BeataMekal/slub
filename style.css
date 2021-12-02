@@ -64,7 +64,7 @@ html{
 
 
 		.header-image{
-			background-image: url("../wesele/para-mloda.jpg");
+			background-image: url("../para-mloda.jpg");
 			background-repeat: no-repeat;
 			height: 100%;
 			background-size: cover;
@@ -405,7 +405,7 @@ html{
 		}
 		@media all and (max-width:640px){
 			.header-image{
-				background-image: url("../wesele/para-mloda-mobile.jpg");
+				background-image: url("../para-mloda-mobile.jpg");
 
 			}
 
