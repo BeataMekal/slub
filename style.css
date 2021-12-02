@@ -52,7 +52,7 @@ html{
 		.header-image{
 			background-image: url('para-mloda.jpg');
 			background-repeat: no-repeat;
-			height: 100%;
+			height: 100vh;
 			background-size: cover;
 			/* display: flex; */
 			display:grid;
@@ -297,14 +297,34 @@ html{
 	@media screen and (max-width:640px){
 		html{
 		font-size: 40.5%;
-		background-image: url('para-mloda-mobile-1500.jpg');
+		background-image: url('para-mloda-mobile.jpg');
 		}
+		#upper-menu li {
+			padding: 5px 0px 0 0px;
+		}
+		.greeting_section{
+			padding-top: 60px;
 	}
-
+	.hamburger-menu{
+		margin: 10px 10px 10px 10px;
+	}
+	#upper-menu li {
+		padding: 5px 0px 0 0px;
+	}
+	.photos_section img{
+		width: 200px;
+	}
+	.greeting_section img{
+		width: 400px;
+	}
+	.form_section img{
+		width: 300px;
+	}
+	}
 
 	@media screen and (max-width:1500px){
 		html{
-			font-size: 80.5%;
+			font-size: 100%;
 		}
 		
 
@@ -316,18 +336,18 @@ html{
 			font-size: 1.5rem;
 		}
 		#upper-menu li {
-			padding: 5px 5px 0 5px;
+			padding: 25px 0px 0 0px;
 		}
 		#upper-menu{
 			display:none;
 		}
 		.hamburger{
 			display: flex;
-			font-size: 50px;
+			font-size: 5.0rem;
 		}
 		
 		.hamburger-menu{
-			margin: 10px 10px 10px 10px;
+			margin: 30px 10px 30px 30px;
 			text-decoration: none;
 		}
 	
@@ -337,6 +357,7 @@ html{
 		.header-image{
 			background-image: url('para-mloda-mobile-1500.jpg');
 			grid-template-rows: repeat(7,1fr);
+			height: 95vh;
 
 		}
 		
@@ -347,13 +368,9 @@ html{
 			padding: 0 10 0 10;
 
 		}
-		.newsletter_section .newsletter_form input{
-			padding: 10 10 5 10;
-			margin: 0px;
-		}
 		.greeting_section{
 			padding-left: 20px;
-			padding-top: 60px;
+			padding-top: 80px;
 			padding-right: 20px;
 		}
 		.mapa{
@@ -361,10 +378,10 @@ html{
 		}
 		.greeting_section img{
 			padding-top: 30px;
-			width: 400px;
+			width: 800px;
 		}
 		.greeting_section h3{
-			font-size: 38px;
+			font-size: 3.8rem;
 		}
 		.form_section{
 			
@@ -377,19 +394,17 @@ html{
 			padding: 10px 22px;
 		}
 		.form_section img{
-			width: 300px;
+			width: 700px;
 		}
 		.photos_section{
 			padding-top: 100px;
 			height: 50vh;
 		}
 		.photos_section img{
-			width: 200px;
+			width: 400px;
 		}
-		
+	}
 			
 
 		
 
-
-	}
