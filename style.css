@@ -294,13 +294,19 @@ html{
 	
 
 	}
-
-
-
-	@media all and (max-width:1500px){
+	@media screen and (max-width:640px){
 		html{
-			font-size: 40.5%;
+		font-size: 40.5%;
+		background-image: url('para-mloda-mobile-1500.jpg');
 		}
+	}
+
+
+	@media screen and (max-width:1500px){
+		html{
+			font-size: 80.5%;
+		}
+		
 
 		#upper-menu ul{
 			flex-direction: column;
@@ -317,6 +323,7 @@ html{
 		}
 		.hamburger{
 			display: flex;
+			font-size: 50px;
 		}
 		
 		.hamburger-menu{
@@ -328,10 +335,11 @@ html{
 			display: none;
 		}
 		.header-image{
-			
+			background-image: url('para-mloda-mobile-1500.jpg');
 			grid-template-rows: repeat(7,1fr);
 
 		}
+		
 		
 		.header-title{
 			grid-row-start: 3;
@@ -378,13 +386,10 @@ html{
 		.photos_section img{
 			width: 200px;
 		}
-		@media all and (max-width:1500px){
-			.header-image{
-				background-image: url('para-mloda-mobile.jpg');
+		
+			
 
-			}
-
-		}
+		
 
 
 	}
