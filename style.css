@@ -191,7 +191,7 @@ html{
 	}
 
 	.form_section button{
-
+		font-family: 'Martel Sans', sans-serif;
 		background-color: #1b3f00; /* Green */
 		border: none;
 		color: white;
@@ -199,7 +199,7 @@ html{
 		text-align: center;
 		text-decoration: none;
 		display: inline-block;
-		font-size: 1.6rem;
+		font-size: 2.0rem;
 		transition-duration: 0.4s;
 		margin: 15px;
 
@@ -296,9 +296,6 @@ html{
 		#upper-menu li {
 			padding: 5px 0px 0 0px;
 		}
-		.greeting_section{
-			padding-top: 60px;
-	}
 	.hamburger-menu{
 		margin: 10px 10px 10px 10px;
 	}
@@ -309,6 +306,7 @@ html{
 		width: 200px;
 	}
 	.greeting_section{
+		padding-top: 60px;
 		padding-left: 20px;
 		padding-right: 20px;
 	}
@@ -379,7 +377,11 @@ html{
 			width: 800px;
 		}
 		.greeting_section h3{
-			font-size: 3.8rem;
+			font-size: 4.5rem;
+		}
+		.greeting_section p{
+			padding-right: 0px;
+			padding-left:0px;
 		}
 		.form_section{
 			
