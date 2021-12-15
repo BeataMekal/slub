@@ -23,7 +23,7 @@ html{
 		}
 			.hamburger{
 				display: none;
-				font-size: 30px;
+				font-size: 3.0rem;
 			}
 
 			.hamburger-menu{
@@ -155,7 +155,7 @@ html{
 		font-weight: 400;
 	}
 	.greeting_section{
-		/*height: 130vh;*/
+		
 		padding-left: 100px;
 		padding-top: 60px;
 		padding-right: 100px;
@@ -174,14 +174,10 @@ html{
 		padding-top: 30px;
 	}
 
-
-
 	.form_section{
 		/*height: 100vh;*/
 		padding-top: 200px;
-		
-		
-	}
+		}
 	.form-text{
 		display: flex;
 	}
@@ -325,10 +321,7 @@ html{
 		html{
 			font-size: 100%;
 		}
-		p{
-			font-size: 2.5rem;
-		}
-
+	
 		#upper-menu ul{
 			flex-direction: column;
 			padding-bottom: 5px;
@@ -372,6 +365,9 @@ html{
 		.mapa{
 			padding: 20px;
 		}
+		.greeting_section{
+			height: 100vh;
+		}
 		.greeting_section img{
 			padding-top: 30px;
 			width: 800px;
@@ -381,13 +377,16 @@ html{
 		}
 		.greeting_section p{
 			padding-right: 0px;
-			padding-left:0px;
+			padding-left: 0px;
 		}
 		.form-text{
 			flex-direction: column;
 		}
 		.form_section img{
 			width: 700px;
+		}
+		.photos_section{
+			height: 50vh;
 		}
 		.photos_section img{
 			width: 400px;
