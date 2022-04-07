@@ -144,7 +144,7 @@ html{
 	}
 	p{
 		font-family: 'Martel Sans';
-		font-size: 2.0rem;
+		font-size: 1.8rem;
 		padding-left: 100px;
 		padding-right: 100px;
 		padding-bottom:40px;
@@ -181,10 +181,15 @@ html{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 	}
+	.wedding_info p{
+		text-align: center;
+	}
 	.gretting_icon{
 		color: #1b3f00;
-		text-align: center;
+		
 		padding-left: 10px;
+		display: inline-block;
+    	width: 100%;
 	}
 	.greeting_section{
 		
@@ -199,10 +204,11 @@ html{
 		padding-top: 50px;
 	}
 	.greeting_section p{
-		padding-top: 40px;
+		padding: 40px;
+
 	}
 	.greeting_section .mapa{
-		text-align: center;
+		text-align: right;
 		padding-top: 30px;
 	}
 
@@ -334,12 +340,12 @@ html{
 		width: 200px;
 	}
 	.greeting_section{
-		padding-top: 60px;
+		padding-top: 80px;
 		padding-left: 20px;
 		padding-right: 20px;
 	}
 	.wedding_info{
-		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-columns: 1fr;
 	}
 	.greeting_section img{
 		width: 400px;
@@ -349,6 +355,9 @@ html{
 	}
 	.form_section button{
 		padding: 10px 22px;
+	}
+	footer .footer_copy p{
+		font-size: 1.1rem;
 	}
 	}
 
@@ -401,7 +410,13 @@ html{
 			padding: 20px;
 		}
 		.greeting_section{
-			height: 100vh;
+			padding-top: 150px;
+		}
+		.wedding_info{
+			grid-template-columns: 1fr;
+		}
+		.greeting_section p{
+			font-size: 0.8rem;
 		}
 		.greeting_section img{
 			padding-top: 30px;
@@ -425,6 +440,9 @@ html{
 		}
 		.photos_section img{
 			width: 400px;
+		}
+		footer .footer_copy p{
+			font-size: 0.9rem;
 		}
 	}
 			
