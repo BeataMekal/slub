@@ -68,7 +68,17 @@
 						<div class="wedding_place"><p><i class="gretting_icon fa fa-heart fa-2x"></i></p><h3>Ceremonia zaślubin</h3><h5>18:00</h5><p>Taras widokowy Rezydencja Sowa ul. Grodzka 12, wejście obok Restauracji Sowa. W przypadku braku pogody ślub będzie przeniesiony do Restauracji Sowa, informację taką wyślemy SMS-em.</p></div>
 						<div class="wedding_reception"><p><i class="gretting_icon fa fa-champagne-glasses fa-2x"></i></p><h3>Wesele</h3><h5>18:30</h5><p>Odbędzie się w Restauracji Sowa ul. Mostowa 4 Bydgoszcz, w Sali Waniliowej na pierwszym piętrze, schody z lewej strony od wejścia.</p></div>
 					</div>
-					<div class="static-map"><img src="map-entrances.png" width="800px" alt="Mapa wejścia na ślub i salę"></div>
+					
+
+					<div class="static-map"><img src="map-entrances.png" id="click-map" cursor="pointer" width="800px" alt="Mapa wejścia na ślub i salę"></div>
+					<div id="clicked-map" class="modal">
+
+						<div class="modal-content">
+						  <span class="close">&times;</span>
+						  <img src="map-entrances.png" alt="Mapa wejścia na ślub i salę">
+						</div>
+					  
+					  </div>
 					<div class="google-map">
 						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2394.299714614663!2d17.99904261583001!3d53.12276517993269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470313bc812b18d1%3A0x2d9d177ed53eb902!2sRestauracja%20Sowa!5e0!3m2!1spl!2spl!4v1637409359153!5m2!1spl!2spl" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 					</div>
@@ -173,6 +183,32 @@
 						//seconds
 						}, 0)
 					}());
+
+					// Get the modal
+					var modal = document.getElementById("clicked-map");
+
+					// Get the button that opens the modal
+					var btn = document.getElementById("click-map");
+
+					// Get the <span> element that closes the modal
+					var span = document.getElementsByClassName("close")[0];
+
+					// When the user clicks on the button, open the modal
+					btn.onclick = function() {
+					modal.style.display = "block";
+					}
+
+					// When the user clicks on <span> (x), close the modal
+					span.onclick = function() {
+					modal.style.display = "none";
+					}
+
+					// When the user clicks anywhere outside of the modal, close it
+					window.onclick = function(event) {
+					if (event.target == modal) {
+						modal.style.display = "none";
+					}
+					}
 			</script>
 		</div>
 	</body>
