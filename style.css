@@ -61,7 +61,6 @@ html{
 		}
 
 			.header-title{
-				padding: 0 0 0 0;
 				text-align: center;
 				font-style: normal;
 				font-weight: normal;
@@ -177,7 +176,43 @@ html{
 		font-weight: 400;
 
 	}
+	.wedding_timer h2{
+		padding-top: 100px;
+	}
+	.wedding_timer ul{
+		text-align: center;
+	}
+	.wedding_timer li{
+		display: inline-block;
+		font-size: 1.5em;
+		list-style-type: none;
+		padding: 1em;
+		text-transform: uppercase;
+		text-align: center;
+		font-family: 'Martel Sans';
+	}
+	.wedding_timer li span {
+		display: block;
+		font-size: 4.5rem;
+		color: #1b3f00;
+	  }
+	  
+	.emoji {
+		display: none;
+		padding: 1rem;
+	}
+	
+	.emoji span {
+		font-size: 4rem;
+		padding: 0 .5rem;
+	}
+	#content{
+		display: none;
+		text-align: center;
+	}
+
 	.wedding_info{
+		padding: 0 50px 0 50px;
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 	}
@@ -186,29 +221,29 @@ html{
 	}
 	.gretting_icon{
 		color: #1b3f00;
-		
-		padding-left: 10px;
 		display: inline-block;
     	width: 100%;
 	}
 	.greeting_section{
-		
-		padding-left: 100px;
-		padding-top: 60px;
-		padding-right: 100px;
+		padding-top: 100px;
+		padding-right:50px;
 	}
 	
 	.greeting_section h4{
 		font-size: 7.0rem;
 		text-align: right;
 		padding-top: 50px;
+
 	}
 	.greeting_section p{
 		padding: 40px;
 
 	}
-	.greeting_section .mapa{
-		text-align: right;
+	.greeting_section .static-map{
+		text-align: center;
+	}
+	.greeting_section .google-map{
+		text-align: center;
 		padding-top: 30px;
 	}
 
@@ -442,7 +477,7 @@ html{
 			width: 400px;
 		}
 		footer .footer_copy p{
-			font-size: 0.9rem;
+			font-size: 0.7rem;
 		}
 	}
 			

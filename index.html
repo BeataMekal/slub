@@ -41,6 +41,25 @@
 			<div class="clearfix"></div>
 			</header>
 			<main>
+				<section class="wedding_timer">
+					<h2 id="headline">Do ślubu pozostało</h2>
+					<div id="countdown">
+						<ul>
+							<li><span id="days"></span>dni</li>
+							<li><span id="hours"></span>godzin</li>
+							<li><span id="minutes"></span>minut</li>
+							<li><span id="seconds"></span>sekund</li>
+					 	 </ul>
+					</div>
+					<div id="content" class="emoji">
+						<span>💖</span>
+						<span>🥳</span>
+						<span>🎉</span>
+						<span>💑</span>
+
+					  </div>
+
+				</section>
 				<section class="greeting_section">
 					<a name="miejsce"></a>
 					<h2>Ślub i przyjęcie weselne</h2>
@@ -49,8 +68,8 @@
 						<div class="wedding_place"><p><i class="gretting_icon fa fa-heart fa-2x"></i></p><h3>Ceremonia zaślubin</h3><h5>18:00</h5><p>Taras widokowy Rezydencja Sowa ul. Grodzka 12, wejście obok Restauracji Sowa. W przypadku braku pogody ślub będzie przeniesiony do Restauracji Sowa, informację taką wyślemy SMS-em.</p></div>
 						<div class="wedding_reception"><p><i class="gretting_icon fa fa-champagne-glasses fa-2x"></i></p><h3>Wesele</h3><h5>18:30</h5><p>Odbędzie się w Restauracji Sowa ul. Mostowa 4 Bydgoszcz, w Sali Waniliowej na pierwszym piętrze, schody z lewej strony od wejścia.</p></div>
 					</div>
-					<img src="map-entrances.png" width="800px" alt="Mapa wejścia na ślub i salę">
-					<div class="mapa">
+					<div class="static-map"><img src="map-entrances.png" width="800px" alt="Mapa wejścia na ślub i salę"></div>
+					<div class="google-map">
 						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2394.299714614663!2d17.99904261583001!3d53.12276517993269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470313bc812b18d1%3A0x2d9d177ed53eb902!2sRestauracja%20Sowa!5e0!3m2!1spl!2spl!4v1637409359153!5m2!1spl!2spl" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 					</div>
 					<h4>Beata Kuźlecka i Jacek Mękal</h4>
@@ -125,6 +144,35 @@
 					// 	$('.hamburger-close');
 					// });
 				});
+
+
+				(function () {
+ 					const second = 1000,
+        			minute = second * 60,
+        			hour = minute * 60,
+        			day = hour * 24;
+					wedding = new Date("May 21, 2022 18:00:00").getTime();
+
+					const countDown = new Date(wedding).getTime(),
+						x = setInterval(function() {    
+
+						const now = new Date().getTime(),
+							distance = countDown - now;
+
+						document.getElementById("days").innerText = Math.floor(distance / (day)),
+						document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+						document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+						document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+						if (distance < 0) {
+							document.getElementById("headline").innerText = "Dziękujemy za przybycie!";
+							document.getElementById("countdown").style.display = "none";
+							document.getElementById("content").style.display = "block";
+							clearInterval(x);
+						}
+						//seconds
+						}, 0)
+					}());
 			</script>
 		</div>
 	</body>
