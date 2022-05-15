@@ -224,7 +224,7 @@ html{
 		display: none; 
 		position: fixed; 
 		z-index: 1; 
-		padding-top: 100px; 
+		padding-top: 10px; 
 		left: 0;
 		top: 0;
 		width: 100%; 
@@ -274,7 +274,13 @@ html{
 	}
 	.greeting_section p{
 		padding: 40px;
-
+	}
+	.greeting_section .wedding_tips{
+		display: flex;
+		justify-content: space-evenly;
+	}
+	.greeting_section .parking-photo{
+		text-align: center;
 	}
 	.greeting_section .static-map{
 		text-align: center;
@@ -492,9 +498,12 @@ html{
 		.greeting_section p{
 			font-size: 0.8rem;
 		}
+		.greeting_section .wedding_tips{
+			flex-direction: column;
+		}
 		.greeting_section img{
 			padding-top: 30px;
-			width: 800px;
+			max-width: 800px;
 		}
 		.greeting_section h3{
 			font-size: 4.2rem;
